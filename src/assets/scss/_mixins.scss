@@ -1,0 +1,32 @@
+//========================================
+// Font face
+//========================================
+@font-face {
+  font-family: BMW-Light;
+  src: url("../fonts/BMWTypeNext-Light.20210426144302.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: BMW-Bold;
+  src: url("../fonts/BMWTypeNext-Bold.20210426144302.ttf") format("truetype");
+}
+
+@mixin font-bold {
+	font-family: BMW-Bold;
+}
+
+@mixin font-light {
+	font-family: BMW-Light;
+
+}
+
+
+//========================================
+// Buttons
+//========================================
+@mixin button{
+  width: 160px;
+  height: 45px;
+  color: #ffffff;
+  
+}
