@@ -29,21 +29,11 @@ a {
 /*	HEADER STYLES	*/
 .header {
   height: 152px;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
-.container {
-  max-width: 1350px;
-  margin: 0 auto;
-  padding: 0 60px;
-}
-
-.header-content {
-  display: flex;
-}
-
-.header-right {
-  width: 80%;
+.header-sumary {
+  margin-top: 30px;
 }
 
 .logo {
@@ -55,7 +45,7 @@ a {
   height: 92px;
 }
 
-.btn {
+.button {
   width: 160px;
   height: 45px;
   color: #ffffff;
@@ -63,6 +53,16 @@ a {
   font-size: 14px;
   padding: 10px 20px;
   margin-right: 30px;
+}
+
+.button:hover {
+  color: #ffffff;
+}
+
+.icons-btn {
+  width: 19px;
+  height: 19px;
+  fill: #ffffff;
 }
 
 .btn-black {
@@ -93,18 +93,402 @@ a {
   margin-right: 5px;
 }
 
-.header-sumary {
-  max-width: 824px;
-}
-
 .header-sumary ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  padding: 0;
 }
 
-.header-sumary a {
+.header-sumary li {
   font-family: BMW-Bold;
   font-size: 14px;
   color: #666666;
+  cursor: pointer;
+}
+
+.slider-intro {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../imgs/banners/desktop-.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+.form {
+  width: 255px;
+  height: 478px;
+  background: #ffffff;
+  margin-top: 50px;
+  padding: 30px 15px 10px 15px;
+}
+
+.form-title {
+  display: flex;
+  justify-content: center;
+}
+
+.form-title h2 {
+  font-family: BMW-Light;
+  font-size: 20px;
+}
+
+.form-container {
+  margin-top: 30px;
+}
+
+#name,
+#email,
+#phone,
+#model,
+#msg {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #bbbbbb;
+  margin-bottom: 30px;
+  padding: 0;
+  width: 100%;
+  font-family: BMW-Light;
+  font-size: 14px;
+}
+
+#name:focus,
+#email:focus,
+#phone:focus,
+#model:focus,
+#msg:focus {
+  border-color: #1c69d4;
+}
+
+#model {
+  background: transparent;
+  color: #666666;
+}
+
+.form-checkbox input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  font-family: BMW-Light;
+  color: #bbbbbb;
+  font-size: 12px;
+}
+
+.btn-form {
+  width: 100%;
+  height: 45px;
+  border: none;
+  font-family: BMW-Bold;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.span-form {
+  font-family: BMW-Bold;
+}
+
+.svg-carro {
+  fill: #1c69d4;
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+}
+
+.main-content {
+  padding: 60px 0;
+}
+
+.main-content h1 {
+  padding-bottom: 40px;
+}
+
+.card-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.card-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card-name {
+  color: #262626;
+  font-size: 20px;
+  font-family: BMW-Light;
+  margin-bottom: 15px;
+}
+
+.shared span {
+  color: #666666;
+  font-family: BMW-Light;
+  font-size: 12px;
+  margin-right: 15px;
+}
+
+.shared svg {
+  fill: #666666;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.btn-card {
+  width: 100%;
+  text-align: center;
+  font-family: BMW-Bold;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.footer-container {
+  height: 251px;
+  background-color: #e6e6e6;
+  padding: 30px 0;
+}
+
+.footer-text {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 14px;
+  color: #262626;
+  font-family: BMW-Light;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.copyright p {
+  font-size: 12px;
+  color: #262626;
+  font-family: BMW-Light;
+}
+
+.copyright span {
+  font-size: 10px;
+  color: #262626;
+  font-family: BMW-Light;
+  margin-right: 15px;
+}
+
+.logo-footer {
+  width: 50px;
+  height: 50px;
+}
+
+.modal-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: none;
+}
+
+.modal-wrapper.active {
+  display: block;
+}
+
+.modal-header {
+  width: 100%;
+  height: 383px;
+  background: #ffffff;
+  position: absolute;
+  border-top: 1px solid #bbbbbb;
+  right: 0;
+  top: 152px;
+  z-index: 99;
+  display: none;
+}
+
+.modal-header.active {
+  display: block;
+  -webkit-animation: scale-up-center 0.1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.modal-nav {
+  width: 14px;
+  height: 14px;
+  background: #1c69d4;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.modal-nav::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #666666;
+  margin-left: 25px;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-nav::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #666666;
+  margin-left: 50px;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .header-mobile {
+    position: fixed;
+  }
+  .slider-intro {
+    background-image: url(../imgs/banners/mobile-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+  }
+  .form {
+    display: none;
+  }
+  .modal-mobile {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: #707070;
+    font-family: BMW-Bold;
+    font-size: 14px;
+    display: none;
+  }
+  .modal-mobile.active {
+    display: block;
+    -webkit-animation: scale-up-center 0.1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-up-center 0.1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+  .close-modal-mobile {
+    height: 50px;
+    background: #666666;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-mobile {
+    width: 100vw;
+    height: 478px;
+    background: #ffffff;
+    padding: 30px 15px 10px 15px;
+  }
+  .header,
+  .btn-desk,
+  .logo-bmw-footer {
+    display: none;
+  }
+  .top-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background: #ffffff;
+  }
+  .top-mobile svg {
+    fill: #666666;
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+  }
+  .top-mobile span {
+    font-family: BMW-Bold;
+    color: #666666;
+    font-size: 14px;
+  }
+  .logo-mobile {
+    width: 35px;
+    height: 35px;
+  }
+  .cotacao-mobile {
+    background: #1C69D4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+  .cotacao-mobile span {
+    color: #ffffff;
+    font-family: BMW-Bold;
+    font-size: 14px;
+  }
+  .btn-card-mobile {
+    display: flex;
+  }
+  .btn-item {
+    width: 49%;
+    background: #1c69d4;
+    margin-right: 2%;
+    cursor: pointer;
+  }
+  .btn-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .btn-call {
+    background: #666666;
+  }
+  .footer-text {
+    font-size: 10px;
+  }
+  .copyright {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 577px) {
+  .header-mobile,
+  .modal-mobile,
+  .btn-card-mobile {
+    display: none;
+  }
 }
